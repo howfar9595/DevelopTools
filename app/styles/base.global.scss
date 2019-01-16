@@ -1,0 +1,28 @@
+$headerHeight:30px;
+$buttonGroupWidth:50px;
+
+#root .ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout .ant-layout-header {
+  height: $headerHeight;
+  background: rgba(60, 60, 60, 0.88);
+  color: rgba(204, 204, 204, 0.6)
+}
+
+.ant-layout .buttonGroup {
+  min-width: $buttonGroupWidth;
+  width: $buttonGroupWidth;
+  position: fixed;
+  height: 100vh;
+  margin-top: $headerHeight;
+  background-color:rgb(51, 51, 51);
+}
+
+.ant-layout .ant-layout {
+  padding-left: $buttonGroupWidth;
+  padding-top: $headerHeight;
+  overflow: hidden;
+}
+

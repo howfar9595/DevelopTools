@@ -1,0 +1,46 @@
+.root {
+  height: 100vh;
+}
+
+.titlebar {
+  height: 30px;
+//   background-color: rgba(60, 60, 60, 0.88);
+// background: linear-gradient(45deg,  rgba(51, 51, 51, 1) 30%, rgba(55, 55, 55, 0.88) 60%, rgba(60, 60, 60, 0.6) 90%);
+ 
+background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+color: rgba(204, 204, 204, 0.6);
+  line-height: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  zoom: 1;
+  display: flex;
+}
+
+.activitybar {
+  width: 50px;
+  height: calc(100vh - 52px);
+  top: 30px;
+  background: linear-gradient(45deg, #21CBF3 15%, #2196F3 45%);
+  top: 30px;
+  bottom: 20px;
+  left: 0px;
+  position: absolute;
+  color: #cccccc;
+}
+
+.content{
+    height: calc(100vh - 52px);
+   padding-left: 50px;
+}
+
+.statusbar{
+    height: 22px;
+    box-sizing: border-box;
+    cursor: default;
+    width: 100%;
+    height: 22px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 122, 204);
+}
