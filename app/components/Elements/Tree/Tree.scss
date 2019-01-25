@@ -1,0 +1,25 @@
+.tree {
+  max-height: calc(100% - 73px);
+  height: calc(100% - 73px);
+  overflow-y: auto;
+}
+
+.buttons {
+  height: 40px;
+  width: 100%;
+
+  .btnAdd {
+    padding: 8px;
+    .conn {
+      width: 25px;
+      height: 25px;
+      position: relative;
+      z-index: 99;
+      background-image: url('/resources/icons/addconn.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 25px;
+      flex-shrink: 0;
+    }
+  }
+}
