@@ -1,9 +1,9 @@
 {
-  "presets": ["stage-0"],
-  "env": {
-    "development": {
-      "presets": ["react-hmre"],
-      "plugins": ["react-hot-loader/babel"]
-    }
-  }
+  // "presets": ["stage-0"],
+  // "env": {
+  //   "development": {
+  //     "presets": ["react-hmre"],
+  //     "plugins": ["react-hot-loader/babel"]
+  //   }
+  // }
 }

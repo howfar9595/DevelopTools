@@ -10,7 +10,6 @@ import Divider from '@material-ui/core/Divider';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
-
 const styles = require("./Tree.scss");
 
 const { TreeNode } = Tree;
@@ -130,7 +129,7 @@ export default class ReactTree extends React.Component {
     const { anchorEl } = this.state;
 
     return (
-      <div className={"grid"}>
+      <div className={styles.treeParent}>
         <div className={styles.buttons}>
           <IconButton size="small" className={styles.btnAdd}
            aria-owns={anchorEl ? 'simple-menu' : undefined}

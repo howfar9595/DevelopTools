@@ -8,8 +8,6 @@ import './styles/app.global.css';
 // import './styles/base.global.css';
 // import './styles/base.css';
 
-
-
 const store = configureStore();
 
 render(

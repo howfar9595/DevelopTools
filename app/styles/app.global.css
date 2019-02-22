@@ -3,7 +3,8 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-@import "~@fortawesome/fontawesome-free/css/all.css";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~antd/dist/antd.css';
 
 /* body {
   position: relative;
@@ -20,11 +21,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0px;
-  padding: 0px;
-  overflow:hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   user-select: none;
   font-size: 11px;
 }
-
-
