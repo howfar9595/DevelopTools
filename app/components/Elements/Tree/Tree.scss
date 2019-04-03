@@ -8,20 +8,20 @@
 }
 
 .buttons {
-  height: 40px;
+  height: 35px;
   width: 100%;
 
   .btnAdd {
     padding: 8px;
     .conn {
-      width: 25px;
-      height: 25px;
+      width: 23px;
+      height: 23px;
       position: relative;
       z-index: 99;
       background-image: url('/resources/icons/addconn.svg');
       background-repeat: no-repeat;
       background-position: 50%;
-      background-size: 25px;
+      background-size: 23px;
       flex-shrink: 0;
     }
   }

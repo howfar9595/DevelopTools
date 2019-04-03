@@ -21,7 +21,9 @@ export default class BaseLayout extends React.Component {
     
     return (
       <Grid className={styles.root}>
-        <Grid item xs={12} className={styles.titlebar}></Grid>
+        <Grid item xs={12} className={styles.titlebar}>
+          <div className={styles.windowAppicon} />
+        </Grid>
         <Grid
           container
         >

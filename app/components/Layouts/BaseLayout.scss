@@ -15,6 +15,17 @@ color: rgba(204, 204, 204, 0.6);
   user-select: none;
   zoom: 1;
   display: flex;
+  .windowAppicon{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+    background-image: url(/resources/icons/app.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30px;
+    flex-shrink: 0;
+  }
 }
 
 .activitybar {

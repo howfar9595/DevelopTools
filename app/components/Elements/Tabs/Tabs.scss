@@ -1,0 +1,39 @@
+.tabs {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  .tab {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width:120px;
+    min-width: fit-content;
+    .tabLabel{
+        overflow: visible;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        white-space: nowrap;
+        flex: 1;
+        line-height: 1.4em;
+    }
+    .tabLabel:before{
+        color: #f55385;
+        content: '\E070';
+        background-size: 16px;
+        background-position: 0;
+        background-repeat: no-repeat;
+        padding-right: 6px;
+        width: 16px;
+        height: 22px;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        vertical-align: top;
+        flex-shrink: 0;
+    }
+  }
+}
