@@ -1,0 +1,21 @@
+--定义变量（@name为变量名）
+DECLARE @name VARCHAR(200);
+
+--将查询出来的约束名赋值给变量
+SELECT  @name = b.name
+FROM    syscolumns a ,
+        sysobjects b
+WHERE   a.id = OBJECT_ID('KH_Employee')
+        AND b.id = a.cdefault
+        AND a.name = 'IsPartTimeTeacher'
+        AND b.name LIKE 'DF%';
+
+IF ( @name IS NOT NULL )
+    BEGIN
+        EXEC('ALTER TABLE KH_Employee DROP CONSTRAINT ' + @name);
+        ALTER TABLE [dbo].[KH_Employee] ADD CONSTRAINT [@name] DEFAULT 0 FOR [IsPartTimeTeacher];
+    END;
+ELSE
+    BEGIN
+        ALTER TABLE [dbo].[KH_Employee] ADD DEFAULT 0 FOR [IsReturn];
+    END;
